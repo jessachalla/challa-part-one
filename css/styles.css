@@ -1,0 +1,158 @@
+<link rel=”stylesheet” type=”text/css’ href=”style.css”>
+
+
+body, html {
+  height: 100%;
+}
+
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px
+}
+
+/* Style of title of site/link */
+.leftnav a {
+  float: left;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 10px;
+  font-family: "Fira", Fira, sans-serif;
+  font-weight: 400;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #88898B;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Fira", Fira, sans-serif;
+    font-weight: 300;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #CCC;
+    color: #FF4850;
+    border-radius: 8px;
+}
+
+/* Change the color of links on hover */
+.leftnav a:hover {
+    background-color: #CCC;
+    color: FF4850;
+    border-radius: 8px;
+}
+
+/* Style of text in main text area. */
+.maintext {
+  font-family: "Fira", Fira, sans-serif;
+  font-weight: 400;
+  float: left;
+  display: flex-wrap;
+  width: 45%;
+  color: #88898B;
+  text-align: left;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Style h1 */
+.maintext h1 {
+  float: left;
+  display: flex-wrap;
+  color: #000000;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Style for button */
+.btn {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 25px;
+  width: auto;
+  font-size: 14px;
+  background-color: #FF4850;
+}
+
+/* Style for button hover */
+.btn:hover {
+    color: #FF4850;
+    background-color: #CCC;
+}
+
+/* Style for orange text */
+span.redtext {
+  color: #FF4850;
+}
+
+body {
+  background-image: url("../images/bulldog.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #F0ECEE;
+}
+
+flex-container.topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+flex-container.maintext {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%
+}
+
+
+@media only screen and (max-width: 768px) {
+  html {
+    height: 100%;
+    background-color: #F0ECEE;
+  }
+
+  body {
+    margin:auto;
+    background-image: none;
+    }
+
+  flex-container.topnav {
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction:column;
+    width: 100%;
+  }
+
+  .topnav a {
+    padding: 1px
+  }
+
+  .leftnav a {
+    padding: 8px 0px
+  }
+
+  .maintext {
+    font-family: "Fira", Fira, sans-serif;
+    font-weight: 400;
+    float: left;
+    display: flex-wrap;
+    width: 100%;
+    color: #88898B;
+    text-align: left;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%
+  }
+}
