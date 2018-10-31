@@ -1,14 +1,17 @@
 <link rel=”stylesheet” type=”text/css’ href=”style.css”>
 
-
-body, html {
+html {
   height: 100%;
 }
 
 body {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px
+  padding-top: 10px;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #F0ECEE;
 }
 
 /* Style of title of site/link */
@@ -17,35 +20,31 @@ body {
   color: #000000;
   text-decoration: none;
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 8px 0px;
   font-family: "Fira", Fira, sans-serif;
   font-weight: 400;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: #88898B;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: "Fira", Fira, sans-serif;
-    font-weight: 300;
+/* Style the list */
+li {
+  display: block;
+  margin: 5px 0;
+  font-size: 16px;
+  font-family: "Fira", Fira, sans-serif;
+  font-weight: 300;
+}
+
+/* Stly of the links in nav bar */
+a {
+  text-decoration: none;
+  color: #88898B;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #CCC;
+a:hover {
     color: #FF4850;
-    border-radius: 8px;
 }
 
-/* Change the color of links on hover */
-.leftnav a:hover {
-    background-color: #CCC;
-    color: FF4850;
-    border-radius: 8px;
-}
 
 /* Style of text in main text area. */
 .maintext {
@@ -53,14 +52,13 @@ body {
   font-weight: 400;
   float: left;
   display: flex-wrap;
-  width: 45%;
+  width: 100%;
   color: #88898B;
+  font-size: 14px;
   text-align: left;
-  text-decoration: none;
-  font-size: 18px;
 }
 
-/* Style h1 */
+/* Style heading of main text area*/
 .maintext h1 {
   float: left;
   display: flex-wrap;
@@ -70,89 +68,73 @@ body {
   font-weight: 600;
 }
 
-/* Style for button */
-.btn {
+/* Style for buttons */
+button {
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   color: white;
-  padding: 10px 25px;
-  width: auto;
-  font-size: 14px;
+  padding: 15px 25px;
+  width: 100%;
+  font-size: 18px;
   background-color: #FF4850;
 }
 
 /* Style for button hover */
-.btn:hover {
+button:hover {
     color: #FF4850;
     background-color: #CCC;
 }
 
-/* Style for orange text */
+/* Style for red text in title and heading*/
 span.redtext {
   color: #FF4850;
 }
 
+/* PC Display styles */
+@media only screen and (min-width: 768px) {
+
+/* Hide breaks to align nav bar with "Adopt Me" title */
+.hidden-ss {
+  display: none !important;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   background-image: url("../images/bulldog.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: #F0ECEE;
 }
 
-flex-container.topnav {
+/* Formatting of nav bar */
+flex-container.navigation {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
-  flex-wrap: wrap;
 }
 
-flex-container.maintext {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%
+/* Style the links inside the navigation bar */
+li {
+  display: inline;
+  padding: 10px 15px;
 }
 
+/* Style of text in main text area. */
+.maintext {
+  width: 45%;
+  font-size: 18px;
+}
 
-@media only screen and (max-width: 768px) {
-  html {
-    height: 100%;
-    background-color: #F0ECEE;
-  }
+/* Style for button */
+button {
+  padding: 10px 15px;
+  width: auto;
+  font-size: 14px;
+}
 
-  body {
-    margin:auto;
-    background-image: none;
-    }
-
-  flex-container.topnav {
-    justify-content:flex-start;
-    align-items:flex-start;
-    flex-direction:column;
-    width: 100%;
-  }
-
-  .topnav a {
-    padding: 1px
-  }
-
-  .leftnav a {
-    padding: 8px 0px
-  }
-
-  .maintext {
-    font-family: "Fira", Fira, sans-serif;
-    font-weight: 400;
-    float: left;
-    display: flex-wrap;
-    width: 100%;
-    color: #88898B;
-    text-align: left;
-    text-decoration: none;
-    font-size: 14px;
-  }
-
-  .btn {
-    width: 100%
-  }
 }
